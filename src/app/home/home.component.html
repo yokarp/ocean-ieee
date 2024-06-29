@@ -1,8 +1,22 @@
-<div class="container">
-    <h1 style="text-align: center">Graficás perras</h1>
-
-    <div class="card">
-        <p-chart type="line" [data]="data" [options]="options" />
+<div class="container" style="text-align: center">
+    <h1>Monitoreo en tiempo real de rios</h1>
+    <h4>Acontinuación se muestran los datos recopilados de los rios en Colombia con el fin de hacer un control de contaminacion sobre los mismos</h4>
+    <h2>Temperatura</h2>
+    <div class="container">
+        <div class="card">
+            <p-chart type="line" [data]="data" [options]="options"/>
+        </div>
     </div>
-    
+    <h2>Conductividad</h2>
+    <div class="container">
+        <div class="card">
+            <p-chart type="line" [data]="dataTwo" [options]="options"/>
+        </div>
+    </div>
+    <h2>Turbidez</h2>
+    <div class="container">
+        <div class="card">
+            <p-chart type="line" [data]="dataThree" [options]="options"/>
+        </div>
+    </div>
 </div>
